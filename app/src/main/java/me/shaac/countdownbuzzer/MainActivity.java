@@ -36,6 +36,7 @@ public class MainActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
+                soundPool.stop(alarm);
                 handler.removeCallbacks(runnable);
                 handler.postDelayed(runnable, 8000);
             }
